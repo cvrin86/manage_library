@@ -19,7 +19,7 @@ public class Auteur {
     private Integer id; // integer ou long, pas de int car un id ne peux pasavoir la valeur 0// Tous
     // les chanps ont la valeur null par defaut
 
-    @Column(nullable = false, length = 50)
+    @Column(length = 50)
     private String nom;
     @Column(length = 30)
     private String prenom;

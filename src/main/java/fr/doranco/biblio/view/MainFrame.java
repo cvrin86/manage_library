@@ -15,10 +15,11 @@ import java.awt.BorderLayout;
 import java.util.List;
 
 public class MainFrame extends JFrame {
-    @Autowired
-    AuteurService auteurService;
 
-    public MainFrame start() {
+    private AuteurService auteurService;
+
+    public MainFrame(AuteurService auteurService) {
+        this.auteurService = auteurService;
 
         this.setTitle("Gestion de la bibliotheque");
         setSize(800, 600);
@@ -44,8 +45,7 @@ public class MainFrame extends JFrame {
             });
         }
         this.add(auteurPanel);
-        this.setVisible(true);
-        return this;
+        this.setVisible(true);// rendre visible
 
     }
 
