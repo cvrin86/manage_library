@@ -1,1 +1,1 @@
-Project manage books with Java Spring et JFX
+Application manage books with Java Swing and Spring Boot
