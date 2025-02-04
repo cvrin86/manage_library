@@ -6,7 +6,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import fr.doranco.biblio.entity.Auteur;
 import fr.doranco.biblio.service.AuteurService;
@@ -14,6 +14,7 @@ import fr.doranco.biblio.service.AuteurService;
 import java.awt.BorderLayout;
 import java.util.List;
 
+@Component
 public class MainFrame extends JFrame {
 
     private AuteurService auteurService;

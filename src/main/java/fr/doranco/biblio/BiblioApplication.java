@@ -19,7 +19,7 @@ public class BiblioApplication {
 
 		SwingUtilities.invokeLater(() -> {
 			// MainFrame mainFrame = new MainFrame();// creer la frame
-			MainFrame mainFrame = context.getBean(MainFrame.class);
+			context.getBean(MainFrame.class);
 
 		});
 
